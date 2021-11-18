@@ -1,0 +1,13 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+html, body {
+  height:100%;
+  margin:0;
+}
+
+h1 {
+  color:crimson;
+}
