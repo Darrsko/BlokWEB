@@ -1,0 +1,325 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box; 
+  margin: 0;
+  padding: 0; 
+  
+}
+
+:root {
+  --achtergrondKleur: rgb(248, 248, 248);
+  --lopendeTekst: 0.875em;
+  --kleineTekst: 0.750em;
+  --bijTekst: #818181;
+}
+
+html, body {
+  height:200vh;
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--achtergrondKleur);
+  
+}
+
+header nav {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1;
+transition: 300ms;
+padding: 1em 1em 1em 1em;
+}
+
+header nav.scrolled
+ {
+   background-color: #fff;
+ }
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 1em;
+  list-style-type: none;
+}
+
+header nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  transition: 300ms;
+}
+header nav.scrolled ul li a{
+  color: #000;
+}
+
+
+
+header nav ul li a img{
+  height: 2em;
+
+
+}
+
+
+
+.homepagina main > section:first-of-type img {
+  width: 100%;
+}
+
+.homepagina main > section:first-of-type h2 {
+  padding-bottom: 1em;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.homepagina main > section:first-of-type a {
+  color: #fff;
+  font-size: var(--lopendeTekst);
+  padding-bottom: 1em;
+
+}
+
+.homepagina main > section:first-of-type{
+  position: relative;
+}
+
+
+.homepagina main > section:first-of-type section{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 1em;
+  margin: 3em 0;
+}
+
+
+
+
+.homepagina main section:nth-of-type(2) h2{
+  padding-top: 2em;
+  padding-left:1em;
+}
+
+.homepagina main section:nth-of-type(2) article ul {
+  
+  padding: 2em 1.25em ;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1em;
+  
+  
+
+}
+
+.homepagina main section:nth-of-type(2) article ul li {
+  width: calc(50% - 0.5em);
+
+}
+
+.homepagina main section:nth-of-type(2) article img {
+  width: 80%;
+}
+
+.homepagina main section:nth-of-type(2) a {
+  text-decoration: none;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  background: white;
+  padding: 1em;
+  color: #000;
+
+}
+
+.homepagina main section:nth-of-type(2) h3 {
+  font-size: var(--lopendeTekst);
+  
+}
+
+.homepagina main > section:nth-of-type(2) > article > section{
+  display: flex;
+  margin: 0 20px;
+}
+
+.homepagina main > section:nth-of-type(2) button {
+  color: white;
+  background: #000;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  height: 2.8125em;
+  width: 100% ;
+  
+}
+
+
+
+.kleur{
+  color: #000;
+  background-color: white;
+}
+
+
+
+/* 2E PAGINA */
+
+
+.productpagina main {
+  padding: 30px 20px 0px;
+  background-color: #fff;
+}
+
+.productpagina header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 1em 0.5em 1em 0.5em;
+  background-color: white;
+  color: #000;
+
+}
+
+.productpagina header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 1em;
+  list-style-type: none;
+}
+
+.productpagina header nav ul li a{
+  color: #fff;
+  text-decoration: none;
+ 
+}
+
+
+
+header nav ul li a img{
+  height: 2em;
+}
+
+
+
+
+
+.productpagina header nav ul li a{
+  font-size: 1em;
+  font-weight: 500;
+  color: #000;
+
+}
+
+.productpagina  main section:first-of-type{
+  margin-top: 6em;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.productpagina main section:first-of-type h2 {
+  color: rgb(129, 129, 129);
+  font-size: 0.75em;
+  margin: 4px 0px 20px;
+  font-weight: 500;
+  
+}
+
+.productpagina main section:first-of-type h1 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+
+}
+
+
+
+.productpagina main section ul {
+  display: flex;
+  list-style: none;
+  margin: 30px 5px 20px;
+  padding: 0px;
+}
+
+.productpagina main section:nth-of-type(2) h2 {
+  font-weight: 500;
+  font-size: var(--lopendeTekst);
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  padding-bottom: 30px;
+}
+  
+.productpagina main section:nth-of-type(2) button {
+    width: 100%;
+    min-height: 40px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: var(--lopendeTekst);
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    border: 1.5px solid rgb(0, 0, 0);
+    padding: 0px 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.productpagina main section:nth-of-type(2) button:nth-of-type(2) {
+    background-color: rgb(233, 28, 35);
+    border: 1px solid rgb(233, 28, 35);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--lopendeTekst);
+    text-transform: uppercase;
+    height: 45px;
+    line-height: 45px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.productpagina main section:nth-of-type(2) button:nth-of-type(3) {
+  display: flex;
+  padding: 0;
+  border: none;
+  text-decoration: underline;
+  font-size: var(--kleineTekst);
+  text-transform: none;
+  color: var(--bijTekst);
+  font-weight: 500;
+
+
+}
+
+.productpagina main section:nth-of-type(3) p {
+  font-size: var(--kleineTekst);
+  line-height: 16px;
+
+}
+
+.productpagina main section:nth-of-type(3) h2 {
+  font-size: 1.250em;
+  text-transform: uppercase;
+  margin-bottom: .5em;
+
+}
+
+.productpagina main section:nth-of-type(3) h3 {
+  font-size: var(--kleineTekst);
+  color: var(--bijTekst);
+  margin-top: 0.750em;
+  font-weight: 500;
+}
+
+
+
+
